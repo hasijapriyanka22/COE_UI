@@ -6,9 +6,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import Details from './components/Details';
 import Default from './components/Default';
-import Product from './components/Product';
-import ProductList from './components/ProductList';
-import Cart from './components/Cart';
+//import Product from './components/ProductList/Product/Product';
+import ProductList from './components/ProductList/ProductList';
+import Cart from './components/Cart/Cart';
 
 class App extends Component {
   render() {
@@ -18,9 +18,9 @@ class App extends Component {
         <Navbar/>          
         <Switch>
               <Route exact path="/" component={ProductList}/>
-              <Route path="/details" Component={Details}/>
-              <Route path="/cart" Component={Cart}/>
-              <Route Component={Default}/>
+              <Route path="/details" component={Details}/>
+              <Route path="/cart" component={Cart}/>
+              <Route component={Default}/>
         </Switch>
         </React.Fragment>
       </div>
